@@ -14,7 +14,7 @@ if not os.path.isfile(path):
 
 maxlen = 20
 
-string_utf8 = open(path, "r").read().decode('utf-8')
+string_utf8 = open(path, "r").read()
 X, Y, char_idx = \
     string_to_semi_redundant_sequences(string_utf8, seq_maxlen=maxlen, redun_step=3)
 
